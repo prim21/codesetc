@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Feeding System - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>🐾 Pet Feeding System</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="live-data.html" class="nav-link" target="_blank">Live Data</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feeding-logs.html" class="nav-link" target="_blank">Feeding Logs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="system-status.html" class="nav-link" target="_blank">System Status</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>System Dashboard</h1>
+                <p>Monitor all aspects of your pet feeding system with real-time data and comprehensive analytics.</p>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="metric-card">
+                <h3>📊 System Performance</h3>
+                <div class="metric-value">98.5%</div>
+                <div class="metric-label">Uptime This Month</div>
+            </div>
+
+            <div class="metric-card">
+                <h3>🍽️ Feeding Accuracy</h3>
+                <div class="metric-value">99.2%</div>
+                <div class="metric-label">Successful Feedings</div>
+            </div>
+
+            <div class="metric-card">
+                <h3>⚡ Power Status</h3>
+                <div class="metric-value">Normal</div>
+                <div class="metric-label">AC Power Connected</div>
+            </div>
+
+            <div class="metric-card">
+                <h3>📡 Connectivity</h3>
+                <div class="metric-value">Strong</div>
+                <div class="metric-label">WiFi Signal</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2>📈 Performance Metrics</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Current Value</th>
+                        <th>Target</th>
+                        <th>Status</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>System Uptime</td>
+                        <td>98.5%</td>
+                        <td>95%</td>
+                        <td><span class="status-indicator online"></span>Excellent</td>
+                        <td>2 minutes ago</td>
+                    </tr>
+                    <tr>
+                        <td>Feeding Accuracy</td>
+                        <td>99.2%</td>
+                        <td>98%</td>
+                        <td><span class="status-indicator online"></span>Excellent</td>
+                        <td>5 minutes ago</td>
+                    </tr>
+                    <tr>
+                        <td>Response Time</td>
+                        <td>0.8s</td>
+                        <td>2s</td>
+                        <td><span class="status-indicator online"></span>Good</td>
+                        <td>1 minute ago</td>
+                    </tr>
+                    <tr>
+                        <td>Error Rate</td>
+                        <td>0.3%</td>
+                        <td>1%</td>
+                        <td><span class="status-indicator online"></span>Excellent</td>
+                        <td>3 minutes ago</td>
+                    </tr>
+                    <tr>
+                        <td>Storage Usage</td>
+                        <td>67%</td>
+                        <td>80%</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>1 minute ago</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overview-cards">
+            <div class="card">
+                <div class="card-icon">🔄</div>
+                <h3>Daily Operations</h3>
+                <p>Total system operations today</p>
+                <div class="card-value">47</div>
+                <div class="card-label">Operations Complete</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>Data Processing</h3>
+                <p>Sensor data points processed</p>
+                <div class="card-value">2.3K</div>
+                <div class="card-label">Data Points Today</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔧</div>
+                <h3>Maintenance</h3>
+                <p>Days until next scheduled maintenance</p>
+                <div class="card-value">12</div>
+                <div class="card-label">Days Remaining</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💾</div>
+                <h3>Storage</h3>
+                <p>Available storage space</p>
+                <div class="card-value">1.2GB</div>
+                <div class="card-label">Space Available</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2>🔧 System Logs</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Event Type</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10:15 AM</td>
+                        <td>System Check</td>
+                        <td>Automated system health check completed</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                    </tr>
+                    <tr>
+                        <td>10:10 AM</td>
+                        <td>Feeding</td>
+                        <td>Morning feeding cycle initiated</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                    </tr>
+                    <tr>
+                        <td>10:05 AM</td>
+                        <td>Sensor Update</td>
+                        <td>Food weight sensor calibration</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>Connection</td>
+                        <td>WiFi connection established</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                    </tr>
+                    <tr>
+                        <td>09:55 AM</td>
+                        <td>Startup</td>
+                        <td>System boot sequence completed</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Pet Feeding System. Dashboard - Real-time monitoring and analytics.</p>
+        </div>
+    </footer>
+</body>
+</html>

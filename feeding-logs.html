@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Feeding System - Feeding Logs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>🐾 Pet Feeding System</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link" target="_blank">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="live-data.html" class="nav-link" target="_blank">Live Data</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feeding-logs.html" class="nav-link active">Feeding Logs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="system-status.html" class="nav-link" target="_blank">System Status</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Feeding Logs & History</h1>
+                <p>Complete record of all feeding activities, schedules, and consumption patterns.</p>
+            </div>
+        </div>
+
+        <div class="overview-cards">
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>Today's Feedings</h3>
+                <p>Number of completed feedings today</p>
+                <div class="card-value">3/4</div>
+                <div class="card-label">Next feeding at 6:00 PM</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🍽️</div>
+                <h3>Total Food Dispensed</h3>
+                <p>Amount of food given today</p>
+                <div class="card-value">1.2 lbs</div>
+                <div class="card-label">Daily Target: 1.5 lbs</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📅</div>
+                <h3>Weekly Average</h3>
+                <p>Average daily food consumption</p>
+                <div class="card-value">1.4 lbs</div>
+                <div class="card-label">Past 7 Days</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">⏰</div>
+                <h3>Feeding Consistency</h3>
+                <p>On-time feeding percentage</p>
+                <div class="card-value">96%</div>
+                <div class="card-label">This Month</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2>📋 Recent Feeding History</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Scheduled Time</th>
+                        <th>Amount Dispensed</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jul 4, 2025 - 12:00 PM</td>
+                        <td>12:00 PM</td>
+                        <td>0.4 lbs</td>
+                        <td>45 seconds</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                        <td>On schedule</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 4, 2025 - 8:00 AM</td>
+                        <td>8:00 AM</td>
+                        <td>0.4 lbs</td>
+                        <td>42 seconds</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                        <td>On schedule</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 4, 2025 - 6:00 AM</td>
+                        <td>6:00 AM</td>
+                        <td>0.4 lbs</td>
+                        <td>48 seconds</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                        <td>On schedule</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 3, 2025 - 6:00 PM</td>
+                        <td>6:00 PM</td>
+                        <td>0.4 lbs</td>
+                        <td>44 seconds</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                        <td>On schedule</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 3, 2025 - 12:00 PM</td>
+                        <td>12:00 PM</td>
+                        <td>0.4 lbs</td>
+                        <td>46 seconds</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                        <td>On schedule</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 3, 2025 - 8:00 AM</td>
+                        <td>8:00 AM</td>
+                        <td>0.35 lbs</td>
+                        <td>52 seconds</td>
+                        <td><span class="status-indicator warning"></span>Partial</td>
+                        <td>Food container low</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 3, 2025 - 6:00 AM</td>
+                        <td>6:00 AM</td>
+                        <td>0.4 lbs</td>
+                        <td>43 seconds</td>
+                        <td><span class="status-indicator online"></span>Success</td>
+                        <td>On schedule</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 2, 2025 - 6:00 PM</td>
+                        <td>6:00 PM</td>
+                        <td>0.0 lbs</td>
+                        <td>0 seconds</td>
+                        <td><span class="status-indicator offline"></span>Failed</td>
+                        <td>Food container empty</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <h2>📈 Weekly Summary</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Total Feedings</th>
+                        <th>Successful</th>
+                        <th>Failed</th>
+                        <th>Total Food</th>
+                        <th>Average per Day</th>
+                        <th>Success Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jun 29 - Jul 5, 2025</td>
+                        <td>27</td>
+                        <td>26</td>
+                        <td>1</td>
+                        <td>10.2 lbs</td>
+                        <td>1.46 lbs</td>
+                        <td>96.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Jun 22 - Jun 28, 2025</td>
+                        <td>28</td>
+                        <td>28</td>
+                        <td>0</td>
+                        <td>10.8 lbs</td>
+                        <td>1.54 lbs</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>Jun 15 - Jun 21, 2025</td>
+                        <td>28</td>
+                        <td>27</td>
+                        <td>1</td>
+                        <td>10.5 lbs</td>
+                        <td>1.50 lbs</td>
+                        <td>96.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Jun 8 - Jun 14, 2025</td>
+                        <td>28</td>
+                        <td>25</td>
+                        <td>3</td>
+                        <td>9.8 lbs</td>
+                        <td>1.40 lbs</td>
+                        <td>89.3%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overview-cards">
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>Monthly Stats</h3>
+                <p>Total feedings this month</p>
+                <div class="card-value">118</div>
+                <div class="card-label">July 2025</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎯</div>
+                <h3>Success Rate</h3>
+                <p>Successful feeding percentage</p>
+                <div class="card-value">97.2%</div>
+                <div class="card-label">This Month</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">⏱️</div>
+                <h3>Average Duration</h3>
+                <p>Average time per feeding</p>
+                <div class="card-value">45 sec</div>
+                <div class="card-label">Past 30 Days</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔄</div>
+                <h3>Next Feeding</h3>
+                <p>Scheduled feeding time</p>
+                <div class="card-value">6:00 PM</div>
+                <div class="card-label">Today</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Pet Feeding System. Feeding Logs - Complete feeding history and analytics.</p>
+        </div>
+    </footer>
+</body>
+</html>

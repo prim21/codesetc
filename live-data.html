@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Feeding System - Live Sensor Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>🐾 Pet Feeding System</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link" target="_blank">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="live-data.html" class="nav-link active">Live Data</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feeding-logs.html" class="nav-link" target="_blank">Feeding Logs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="system-status.html" class="nav-link" target="_blank">System Status</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Live Sensor Data</h1>
+                <p>Real-time monitoring of food weight, environmental conditions, and system sensors.</p>
+            </div>
+        </div>
+
+        <div class="overview-cards">
+            <div class="card">
+                <div class="card-icon">⚖️</div>
+                <h3>Current Food Weight</h3>
+                <p>Live weight measurement from food container</p>
+                <div class="card-value">2.47 lbs</div>
+                <div class="card-label">Last Updated: 5 seconds ago</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🌡️</div>
+                <h3>Temperature</h3>
+                <p>Ambient temperature near feeding area</p>
+                <div class="card-value">72°F</div>
+                <div class="card-label">Optimal Range: 68-75°F</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💧</div>
+                <h3>Humidity</h3>
+                <p>Relative humidity measurement</p>
+                <div class="card-value">45%</div>
+                <div class="card-label">Ideal Range: 40-60%</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔋</div>
+                <h3>Battery Level</h3>
+                <p>Backup battery charge status</p>
+                <div class="card-value">87%</div>
+                <div class="card-label">Estimated: 12 hours remaining</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2>📊 Real-Time Sensor Readings</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Sensor</th>
+                        <th>Current Value</th>
+                        <th>Unit</th>
+                        <th>Status</th>
+                        <th>Last Reading</th>
+                        <th>Trend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Food Weight Scale</td>
+                        <td>2.47</td>
+                        <td>lbs</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>5 seconds ago</td>
+                        <td>↓ Decreasing</td>
+                    </tr>
+                    <tr>
+                        <td>Temperature Sensor</td>
+                        <td>72.3</td>
+                        <td>°F</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>10 seconds ago</td>
+                        <td>→ Stable</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity Sensor</td>
+                        <td>45.2</td>
+                        <td>%</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>12 seconds ago</td>
+                        <td>↑ Increasing</td>
+                    </tr>
+                    <tr>
+                        <td>Motion Detector</td>
+                        <td>Active</td>
+                        <td>-</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>2 seconds ago</td>
+                        <td>→ Stable</td>
+                    </tr>
+                    <tr>
+                        <td>Dispenser Motor</td>
+                        <td>Idle</td>
+                        <td>-</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>3 minutes ago</td>
+                        <td>→ Stable</td>
+                    </tr>
+                    <tr>
+                        <td>WiFi Signal</td>
+                        <td>-42</t

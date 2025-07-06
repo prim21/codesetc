@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Feeding System - System Status</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>🐾 Pet Feeding System</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link" target="_blank">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="live-data.html" class="nav-link" target="_blank">Live Data</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feeding-logs.html" class="nav-link" target="_blank">Feeding Logs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="system-status.html" class="nav-link active">System Status</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>System Status & Alerts</h1>
+                <p>Monitor system health, view alerts, and track operational status in real-time.</p>
+            </div>
+        </div>
+
+        <div class="alert alert-success">
+            <span>✅</span>
+            <div>
+                <strong>System Operational:</strong> All systems are running normally. Last check: 2 minutes ago.
+            </div>
+        </div>
+
+        <div class="alert alert-warning">
+            <span>⚠️</span>
+            <div>
+                <strong>Food Level Alert:</strong> Food container is at 62% capacity. Consider refilling soon.
+            </div>
+        </div>
+
+        <div class="overview-cards">
+            <div class="card">
+                <div class="card-icon">🔄</div>
+                <h3>System Status</h3>
+                <p>Overall system operational status</p>
+                <div class="card-value status-good">Online</div>
+                <div class="card-label">All Systems Normal</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔋</div>
+                <h3>Power Status</h3>
+                <p>Main power and backup battery</p>
+                <div class="card-value status-good">AC Power</div>
+                <div class="card-label">Battery: 87%</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📡</div>
+                <h3>Connectivity</h3>
+                <p>Network connection status</p>
+                <div class="card-value status-good">Connected</div>
+                <div class="card-label">WiFi Signal: Strong</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🍽️</div>
+                <h3>Food Container</h3>
+                <p>Current food level status</p>
+                <div class="card-value status-warning">62%</div>
+                <div class="card-label">2.47 lbs remaining</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2>🔧 Component Status</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Status</th>
+                        <th>Health</th>
+                        <th>Last Check</th>
+                        <th>Temperature</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Main Controller</td>
+                        <td><span class="status-indicator online"></span>Online</td>
+                        <td>Excellent</td>
+                        <td>1 minute ago</td>
+                        <td>68°F</td>
+                        <td>Operating normally</td>
+                    </tr>
+                    <tr>
+                        <td>Food Dispenser Motor</td>
+                        <td><span class="status-indicator online"></span>Online</td>
+                        <td>Good</td>
+                        <td>3 minutes ago</td>
+                        <td>72°F</td>
+                        <td>Last operation: 2 hours ago</td>
+                    </tr>
+                    <tr>
+                        <td>Weight Sensor</td>
+                        <td><span class="status-indicator online"></span>Online</td>
+                        <td>Excellent</td>
+                        <td>5 seconds ago</td>
+                        <td>71°F</td>
+                        <td>Calibrated this morning</td>
+                    </tr>
+                    <tr>
+                        <td>Motion Detector</td>
+                        <td><span class="status-indicator online"></span>Online</td>
+                        <td>Good</td>
+                        <td>2 seconds ago</td>
+                        <td>70°F</td>
+                        <td>Detection range: 5 feet</td>
+                    </tr>
+                    <tr>
+                        <td>WiFi Module</td>
+                        <td><span class="status-indicator online"></span>Online</td>
+                        <td>Excellent</td>
+                        <td>1 second ago</td>
+                        <td>69°F</td>
+                        <td>Signal strength: -42 dBm</td>
+                    </tr>
+                    <tr>
+                        <td>Backup Battery</td>
+                        <td><span class="status-indicator online"></span>Charging</td>
+                        <td>Good</td>
+                        <td>30 seconds ago</td>
+                        <td>75°F</td>
+                        <td>87% charge, 12 hours remaining</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <h2>🚨 Recent Alerts & Notifications</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Alert Type</th>
+                        <th>Priority</th>
+                        <th>Message</th>
+                        <th>Status</th>
+                        <th>Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jul 4, 2025 - 10:15 AM</td>
+                        <td>Low Food Level</td>
+                        <td>Medium</td>
+                        <td>Food container at 62% capacity</td>
+                        <td><span class="status-indicator warning"></span>Active</td>
+                        <td>Refill container</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 4, 2025 - 8:30 AM</td>
+                        <td>Successful Feeding</td>
+                        <td>Info</td>
+                        <td>Morning feeding completed successfully</td>
+                        <td><span class="status-indicator online"></span>Resolved</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 4, 2025 - 6:15 AM</td>
+                        <td>System Boot</td>
+                        <td>Info</td>
+                        <td>System started successfully</td>
+                        <td><span class="status-indicator online"></span>Resolved</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 3, 2025 - 8:45 PM</td>
+                        <td>WiFi Reconnection</td>
+                        <td>Low</td>
+                        <td>WiFi connection restored after brief outage</td>
+                        <td><span class="status-indicator online"></span>Resolved</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 3, 2025 - 8:30 PM</td>
+                        <td>Connection Lost</td>
+                        <td>Medium</td>
+                        <td>WiFi connection temporarily lost</td>
+                        <td><span class="status-indicator online"></span>Resolved</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Jul 3, 2025 - 12:15 PM</td>
+                        <td>Feeding Error</td>
+                        <td>High</td>
+                        <td>Food container empty - feeding failed</td>
+                        <td><span class="status-indicator online"></span>Resolved</td>
+                        <td>Container was refilled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overview-cards">
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>Uptime</h3>
+                <p>System operational time</p>
+                <div class="card-value">99.2%</div>
+                <div class="card-label">Past 30 Days</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔄</div>
+                <h3>Last Restart</h3>
+                <p>Most recent system restart</p>
+                <div class="card-value">4 days</div>
+                <div class="card-label">July 1, 2025</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">⚠️</div>
+                <h3>Active Alerts</h3>
+                <p>Current system alerts</p>
+                <div class="card-value">1</div>
+                <div class="card-label">Low Food Level</div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔧</div>
+                <h3>Next Maintenance</h3>
+                <p>Scheduled maintenance window</p>
+                <div class="card-value">12 days</div>
+                <div class="card-label">July 16, 2025</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2>🔋 Power & Environmental Status</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Current Value</th>
+                        <th>Normal Range</th>
+                        <th>Status</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AC Power Voltage</td>
+                        <td>120.2V</td>
+                        <td>110-130V</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>1 minute ago</td>
+                    </tr>
+                    <tr>
+                        <td>Power Consumption</td>
+                        <td>12.4W</td>
+                        <td>8-15W</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>1 minute ago</td>
+                    </tr>
+                    <tr>
+                        <td>Internal Temperature</td>
+                        <td>68°F</td>
+                        <td>60-80°F</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>30 seconds ago</td>
+                    </tr>
+                    <tr>
+                        <td>Ambient Humidity</td>
+                        <td>45%</td>
+                        <td>30-70%</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>45 seconds ago</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Charge</td>
+                        <td>87%</td>
+                        <td>80-100%</td>
+                        <td><span class="status-indicator online"></span>Normal</td>
+                        <td>2 minutes ago</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Pet Feeding System. System Status - Real-time monitoring and alerts.</p>
+        </div>
+    </footer>
+</body>
+</html>
